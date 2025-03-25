@@ -1,11 +1,11 @@
-#include <Wire.h>				// 12C 통신을 위한 기본 라이브러리
-#include <LiquidCrystal_I2C.h>	// 12C LCD 라이브러리
+#include <Wire.h>				// I2C 통신을 위한 기본 라이브러리
+#include <LiquidCrystal_I2C.h>	// I2C LCD 라이브러리
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void setup() {
-    lcd.init();					// 12C LCD 초기화
-    lcd.backlight();
+    lcd.init();					// I2C LCD 초기화
+    lcd.backlight();            // 백라이트 켜기
     lcd.print("LCD init");
     delay(2000);
     lcd.clear();
