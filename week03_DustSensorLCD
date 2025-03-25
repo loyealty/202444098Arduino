@@ -17,7 +17,7 @@ void setup() {
 
     lcd.init();        
     lcd.backlight();   
-    lcd.print("init!");
+    lcd.print("Dust Sensor Init!");
     delay(2000);
     lcd.clear();
 }
