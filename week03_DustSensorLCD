@@ -17,7 +17,7 @@ void setup() {
 
     lcd.init();        
     lcd.backlight();   
-    lcd.print("Hello world!");
+    lcd.print("init!");
     delay(2000);
     lcd.clear();
 }
@@ -39,7 +39,7 @@ void loop() {
     Serial.println(dustDensity);
 
     lcd.setCursor(0, 0);
-    lcd.print("Dust Density:");
+    lcd.print("Hello world");
 
     lcd.setCursor(0, 1);
     lcd.print(dustDensity);
